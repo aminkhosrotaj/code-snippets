@@ -1,1 +1,0 @@
-root@srv7063398495:~# docker cp jira:/var/atlassian/jira/2023-Jun-25--0105.zip /root/jira-backup
