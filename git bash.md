@@ -77,7 +77,7 @@ Your branch is ahead of 'origin/main' by 1 commit.
 nothing to commit, working tree clean
 
 DELL khosrotaj@DellKhosrotaj MINGW64 /e/code-snippets (main)
-$ git push origin main
+$ git push -uf origin main
 Enter passphrase for key '/c/Users/DELL khosrotaj/.ssh/id_rsa':
 Enumerating objects: 4, done.
 Counting objects: 100% (4/4), done.
