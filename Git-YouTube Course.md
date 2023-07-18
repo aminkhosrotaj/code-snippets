@@ -9,123 +9,121 @@
 5-Continuous monitoring
 
 
-## Create UserAccount for use repository
+### Create UserAccount for use repository
 
 ```bash
 git config --global user.name /a.khosrotaj/
 ```
-## Show user list
+### Show user list
 
-$Git config --global
+	$Git config --global
 
-## Set personal Mail
+### Set personal Mail
 
-$Git config --global user.email "akhosrotaj@eridanus.ir"
-
------------------------------------------------------------
-## Show location
-
-$pwd
-
-## show file
-
-$ls
-$ll
-$ls -a
+	$Git config --global user.email "akhosrotaj@eridanus.ir"
 
 -----------------------------------------------------------
-## Git repository
+### Show location
+
+	$pwd
+
+### show file
+	
+	$ls
+	$ll
+	$ls -a
+
+-----------------------------------------------------------
+### Git repository
 
 command to initialize a new Git repository. This command creates a hidden .git folder that tracks changes in your project
 
-$Git init
+	$Git init
 
 ----------------------------------------------------------
-## Tracking File Step by Step
+### Tracking File Step by Step
 
-$Git add .
-$Git Status
-$Git commit -m " .......commente....... "
-$Git log
-$Git diff
+	$Git add .
+	$Git Status
+	$Git commit -m " .......commente....... "
+	$Git log
+	$Git diff
 
 ----------------------------------------------------------
-### Remote repository
+## Remote repository
 
-## Copy files Remote > Local
+### Copy files Remote > Local
 
-# Clone
-$Git clone -b main .......Remote Address.......
+### Clone
+	$Git clone -b main .......Remote Address.......
 
-# Pull&Push
-**Remote > Local = $Git Pull
-**Local > Remote = $Git Push
+### Pull&Push
+***Remote > Local = $Git Pull***
+***Local > Remote = $Git Push***
 ---------------------------------------------------------
-### Branch 
+## Branch 
 
-# show Branch list
-$git branch
+### show Branch list
+	$git branch
 
-# Create New
-$git branch .....branch name.....
+### Create New
+	$git branch .....branch name.....
 
-# Switch Between two branch
-$git switch .....name.....
+### Switch Between two branch
+	$git switch .....name.....
 
-## transfer local Branch to remote Repository
-$git push origin .....branch name.....
+### transfer local Branch to remote Repository
+	$git push origin .....branch name.....
 --------------------------------------------------------
 ### Create file on Git Bash
 
-$touch ...fie name... .md
-$echo ".....Text....." >> ...file name... .md
+	$touch ...fie name... .md
+	$echo ".....Text....." >> ...file name... .md
 --------------------------------------------------------
-### Merge
+## Merge
 
-## merge 2 branch on Remote Repository
+### merge 2 branch on Remote Repository
 
 1- Login to GitHub
 2- click to *Pull Request*
 --------------------------------------------------------
 ### Create branch and login
-$git checkout -b ....branch name....
+	$git checkout -b ....branch name....
 --------------------------------------------------------
+### merge 2 branch on Local Repository
 
-## merge 2 branch on Local Repository
+	$git checkout ....main branch....
+	$git merge ....sub branch....
 
-$git checkout ....main branch....
-$git merge ....sub branch....
-
-## checks and show
+### checks and show
 	$ls -a
 
-## push on Remote Repository
+### push on Remote Repository
 	$git add .
 	$git commit
 	$git push
 --------------------------------------------------------
+## Reset - Revert
 
-### Reset - Revert
-
-## Reset
+### Reset
 All <commit> have been removed until the desired <commit>
 
-## Revert
+### Revert
 Create new <commit> and revert to desired <commit> (undo Additional steps)
 
 *** If changes have been made on a Local Repository >>> <Reset>
 *** If changes have been made on a Remote Repository >>> <Revert>
 
-## Show Logs & spacial commet ID
-$git log --oneline
+### Show Logs & spacial commet ID
+	$git log --oneline
 
 	$git Reset --soft ....Special commet ID....
 
-*** By using the --soft command, you can perform a reset without deleting the files
-*** By using the --hard command, you can perform a reset deleting the files
+***By using the --soft command, you can perform a reset without deleting the files***
+***By using the --hard command, you can perform a reset deleting the files***
 ---------------------------------------------------------
 
-### Stash
+## Stash
 
 Commit is temporarily converted to WIP(working in progres) mode
 
@@ -142,11 +140,11 @@ Restore again stash commet
 
 	$git stash drop
 
-## Stash Untrack File
+### Stash Untrack File
 
 	$git stash -a
 
-## stash apply+drop for both (track & untrack file)
+### stash apply+drop for both (track & untrack file)
 
 	$git stah pop stash{..Stash ID..}
 
